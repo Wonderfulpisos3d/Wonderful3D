@@ -66,7 +66,7 @@ const GrillaAsistencias = () => {
   const [metodosPago, setMetodosPago] = useState(
     { "Mexico City": { card: 0, cash: 0 } },
     { "Barcelona": { card: 0, cash: 0 } },
-    { "Indianapolis": { card: 0, cash: 0 } }
+    { "Milwaukee": { card: 0, cash: 0 } }
   );
   const [prueba, setPrueba] = useState({});
   const colors = tokens(theme.palette.mode);
@@ -74,7 +74,7 @@ const GrillaAsistencias = () => {
   const [CashCard, setCashCard] = useState({
     "Mexico City": { Cash: {}, Card: {} },
     "Barcelona": { Cash: {}, Card: {} },
-    "Indianapolis": { Cash: {}, Card: {} },
+    "Milwaukee": { Cash: {}, Card: {} },
   });
   const [campaignCounts, setCampaignCounts] = useState({
     "Junio-Julio": {},
@@ -111,7 +111,7 @@ const GrillaAsistencias = () => {
 
         newCampaignCounts["SEP-OCT"]["Mexico City"] = 0;
         newCampaignCounts["SEP-OCT"]["Barcelona"] = 0;
-        newCampaignCounts["SEP-OCT"]["Indianapolis"] = 0;
+        newCampaignCounts["SEP-OCT"]["Milwaukee"] = 0;
 
         snapshot.docs.forEach((doc) => {
           const fecha = doc.data().date;
@@ -121,14 +121,14 @@ const GrillaAsistencias = () => {
           if (fecha && fecha.slice(0, 4) === "2024") {
             const mes = fecha.slice(5, 7);
 
-            if (mes === "09") {
+            if (mes === "10") {
               // Update the count for the specified cities
               if (city === "Mexico City") {
                 updateCityCount(newCampaignCounts, "SEP-OCT", city);
               } else if (city === "Barcelona") {
                 updateCityCount(newCampaignCounts, "SEP-OCT", city);
               }
-              else if (city === "Indianapolis") {
+              else if (city === "Milwaukee") {
                 updateCityCount(newCampaignCounts, "SEP-OCT", city);
               }
             }
@@ -164,11 +164,11 @@ const GrillaAsistencias = () => {
       try {
         const db = getFirestore(firebaseApp);
         const usuariosRef = collection(db, "usuarios");
-        const citiesToShow = ["Mexico City", "Barcelona", "Indianapolis"];
+        const citiesToShow = ["Mexico City", "Barcelona", "Milwaukee"];
         const q = query(
           usuariosRef,
           where("city", "in", citiesToShow),
-          where("date", "==", "2024-09-28")
+          where("date", "==", "2024-10-01")
         );
         const querySnapshot = await getDocs(q);
 
@@ -178,7 +178,7 @@ const GrillaAsistencias = () => {
         const cityMethodCounts = {
           "Mexico City": { cash: 0, card: 0 },
           "Barcelona": { cash: 0, card: 0 },
-          "Indianapolis": { cash: 0, card: 0 },
+          "Milwaukee": { cash: 0, card: 0 },
         };
 
         querySnapshot.forEach((doc) => {
@@ -215,7 +215,7 @@ const GrillaAsistencias = () => {
       const url2 =
         "https://opensheet.elk.sh/16dK63efNIhXABO3uLuFKWuvguH_N29Q6_pLBhiSwVcY/Asistencia";
       const url3 =
-        "https://opensheet.elk.sh/1RmaebyZf2m3f4xDcDOU-D480aTTiCGKUVjIjDGXJpy0/Asistencia";
+        "https://opensheet.elk.sh/1LengbBX8RahJjtUm9LxIWZRWKld55CK_Ktb9BoUhxuM/Asistencia";
 
       try {
         const [data1, data2, data3] = await Promise.all([
@@ -236,7 +236,7 @@ const GrillaAsistencias = () => {
           Card: Number(data2[0]["Tarjeta:"]),
         };
 
-        newData["Indianapolis"] = {
+        newData["Milwaukee"] = {
           Cash: Number(data3[0]["Efectivo:"]),
           Card: Number(data3[0]["Tarjeta:"]),
         };

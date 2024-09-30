@@ -108,7 +108,7 @@ export default function AdminPage() {
 
   const auth = getAuth(firebaseApp);
 
-  const cities = ["Barcelona", "Mexico City", "Indianapolis"];
+  const cities = ["Barcelona", "Mexico City", "Milwaukee"];
 
   const updateResponsableIfNeeded = () => {
     if (
@@ -154,7 +154,7 @@ export default function AdminPage() {
       localStorage.usuario ===
       '{"uid":"Hmw31wvlKxeiWcptjE5VGamDm3H3","email":"oneynon2011@gmail.com","role":"admin","city":"online","username":"Martín Zuniga"}'
     ) {
-      return "Indianapolis";
+      return "Milwaukee";
     } else {
       return "city";
     }
@@ -179,7 +179,7 @@ export default function AdminPage() {
       localStorage.usuario ===
       '{"uid":"Hmw31wvlKxeiWcptjE5VGamDm3H3","email":"oneynon2011@gmail.com","role":"admin","city":"online","username":"Martín Zuniga"}'
     ) {
-      return "Indianapolis";
+      return "Milwaukee";
     } else {
       return "city";
     }
@@ -265,7 +265,7 @@ export default function AdminPage() {
         } else if (showAutocompleteEquipo2) {
           url = `https://opensheet.elk.sh/17CGQyACZYzq1-xvl6Jot5JdIf3cKiJTlctKT6XQ96r8/Plataforma`;
         } else if (showAutocompleteEquipo3) {
-          url = `https://opensheet.elk.sh/1RmaebyZf2m3f4xDcDOU-D480aTTiCGKUVjIjDGXJpy0/Plataforma`;
+          url = `https://opensheet.elk.sh/1LengbBX8RahJjtUm9LxIWZRWKld55CK_Ktb9BoUhxuM/Plataforma`;
         } else {
           url = `https://opensheet.elk.sh/16dK63efNIhXABO3uLuFKWuvguH_N29Q6_pLBhiSwVcY/Plataforma`;
         }
