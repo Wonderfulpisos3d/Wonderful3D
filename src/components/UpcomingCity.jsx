@@ -45,7 +45,7 @@ export default function UpcomingCity(equipo) {
         url = `https://opensheet.elk.sh/17CGQyACZYzq1-xvl6Jot5JdIf3cKiJTlctKT6XQ96r8/Inscripciones`;
         setCity(equipo.cities[1]);
       } else if (equipo.equipo3) {
-        url = `https://opensheet.elk.sh/1LengbBX8RahJjtUm9LxIWZRWKld55CK_Ktb9BoUhxuM/Inscripciones`;
+        url = `https://opensheet.elk.sh/1XTYNJp-dHys_tyvidSOYPlh7XF82njC9UA4e8LBRm3I/Inscripciones`;
         setCity(equipo.cities[2]);
       }
       else {
