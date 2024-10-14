@@ -174,7 +174,7 @@ Tiempo de secado necesario para asegurar un resultado duradero.
       description:
       `En este video, descubre la fascinante técnica de crear pisos en 3D de amapolas utilizando resina epoxi. Observa cómo se recrean con precisión cada detalle de las amapolas, desde los pétalos hasta los tallos, creando una sensación de realismo y profundidad. La resina epoxi se utiliza para dar vida a este diseño, proporcionando durabilidad y facilidad de mantenimiento. Sumérgete en un jardín encantador y relajante con este diseño en 3D de amapolas con resina epoxi. No te pierdas este video inspirador que te mostrará las posibilidades de los pisos en 3D con esta técnica única. Tamaño del Proyecto: 1200 Sqft = 120m2. Materiales Utilizados para este Proyecto: 5 Galón Epoxy Primer Wf52 = 19 Lts (Imprimación Epóxica); 20 Gal Epoxy Resin Wf52 = 76Lts; 8 Lts Isopropilico; 4Lts Laca poliuretánica (Para el mural); Pistola de pintar (Para mural). Herramientas Utilizadas: 4 Brochas 1"; 6 Rodillos epoxicos pelo corto; 3 Squeegee Dentado (Secador o jalador dentado); 2 Spike Rolles (Rodillo de púas); Zapatos de clavo; Mezclador Helicoidal`,
       url:
-      `https://player.vimeo.com/video/1017155674?h=d922d1ee0c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write`,
+      `https://player.vimeo.com/video/1019600705?h=74c6c1ebeb&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write`,
     },
     {
       id: 12,
