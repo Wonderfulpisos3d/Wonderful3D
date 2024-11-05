@@ -4,6 +4,11 @@ export const Miami = [
         "telefono": "+12604685988",
         "correo": "enzofercornuz98@gmail.com"
     },
+    }
+        "nombre": "Eduardo Ahumada",
+        "telefono": "+5493512646228",
+        "correo": "edu24689@gmail.com"
+    },
     {
         "nombre": "Noslen Puerta",
         "telefono": "+13053600541",
